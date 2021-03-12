@@ -39,7 +39,7 @@ while game_on:
         food.move_food()
         snake.extend()
         score_board.update_score()
-    # detect collision with food
+    # detect collision with wall
     if snake.segments[0].xcor() < -280 or snake.segments[0].xcor() > 280 or snake.segments[0].ycor() < -280 or snake.segments[0].ycor() > 280:
         score_board.game_over()
         game_on = False
